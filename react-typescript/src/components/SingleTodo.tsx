@@ -15,6 +15,8 @@ const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
   const [editTodo, setEditTodo] = useState<string>(todo.todo);
   const inputRef = useRef<HTMLInputElement>(null);
 
+
+  
   useEffect(() => {
     inputRef.current?.focus();
   }, [isEdit]);
@@ -26,6 +28,8 @@ const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
       )
     );
   };
+
+
 
   const handleDelete = (id: number) => {
     setTodos(todos.filter((todo) => todo.id !== id));
