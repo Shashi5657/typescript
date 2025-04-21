@@ -89,11 +89,16 @@
 
 .single__todo {
   display: flex;
-  width: 29.5%;
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
   background-color: aqua;
+  transition: 0.2s;
+}
+
+.single__todo:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.03);
 }
 
 .single__todo--text {
@@ -113,9 +118,9 @@
   cursor: pointer;
 }
 
-@media (max-width: 1200px) {
-  .single__todo {
-    width: 40%;
+@media (max-width: 1100px) {
+  .todos {
+    width: 45%;
   }
 }
 
@@ -132,8 +137,15 @@
   }
   .todos {
     width: 95%;
+    margin-bottom: 10px;
   }
-  .single__todo {
-    width: 100%;
+
+  .container {
+    width: 95%;
+    flex-direction: column;
   }
+}
+
+.remove {
+  background-color: red;
 }
