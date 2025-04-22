@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 .app {
   width: 100vw;
-  height: 100vh;
-  background-color: bisque;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 60px;
+  background-color: #2f74c0;
   font-family: "Neucha", cursive;
 }
 
@@ -19,14 +20,14 @@
 }
 
 .input {
-  width: 90%;
+  width: 95%;
   display: flex;
   position: relative;
   align-items: center;
 }
 
 .input__box {
-  width: 100%;
+  width: 95%;
   position: absolute;
   border-radius: 50px;
   padding: 20px 30px;
@@ -64,12 +65,26 @@
   box-shadow: 0 0 5px black;
 }
 
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .todos {
   display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  width: 47.5%;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: blue;
+}
+
+.todos__heading {
+  font-size: 30px;
+  color: white;
 }
 
 .single__todo {
